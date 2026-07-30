@@ -33,6 +33,8 @@
 .teaser-proof span { display: block; margin-top: 9px; color: rgba(255,255,255,.62); font-size: 10px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 
 .teaser-problem { background: var(--paper); }
+.teaser-problem-kicker { max-width: 780px; margin: 0 0 58px; color: var(--muted); font-family: var(--serif); font-size: clamp(24px, 3.3vw, 42px); letter-spacing: -.025em; line-height: 1.2; }
+.teaser-problem-kicker em { color: var(--green); font-weight: 400; }
 .teaser-quote { max-width: 1080px; margin: 0; font-family: var(--serif); font-size: clamp(48px, 7.4vw, 102px); letter-spacing: -.05em; line-height: .98; }
 .teaser-quote em { color: var(--green); font-weight: 400; }
 .teaser-problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin: 72px 0 0 28%; padding-top: 30px; border-top: 1px solid var(--line); }
@@ -71,6 +73,7 @@
 
 .teaser-advantage { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 70px; align-items: center; }
 .teaser-advantage .product-visual { min-height: 650px; }
+.teaser-about-note { margin: 34px 0 0; padding: 22px 0 22px 24px; border-left: 2px solid var(--gold-soft); color: rgba(255,255,255,.82); font-family: var(--serif); font-size: 19px; line-height: 1.5; }
 .teaser-asset-list { margin: 45px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--white-line); }
 .teaser-asset-list li { display: grid; grid-template-columns: minmax(150px, .42fr) 1fr; gap: 24px; padding: 19px 0; border-bottom: 1px solid var(--white-line); }
 .teaser-asset-list b { color: var(--gold-soft); font-family: var(--serif); font-size: 20px; font-weight: 400; }
