@@ -96,7 +96,9 @@
 
 .teaser-team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .teaser-person { display: grid; grid-template-columns: 180px 1fr; gap: 30px; align-items: center; min-height: 330px; padding: 34px; border: 1px solid var(--line); background: rgba(255,255,255,.38); }
-.teaser-person img { width: 180px; height: 180px; object-fit: cover; border: 2px solid var(--gold); border-radius: 50%; background: var(--paper); }
+.teaser-person-photo { position: relative; width: 180px; height: 180px; overflow: hidden; border: 2px solid var(--gold); border-radius: 50%; background: var(--paper); }
+.teaser-person-photo img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.teaser-person-photo-marie img { top: -2%; left: -14%; width: 140%; height: 140%; }
 .teaser-person span { display: inline-flex; padding: 7px 12px; color: #8b6c32; background: rgba(185,149,88,.12); font-size: 9px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
 .teaser-person h3 { margin: 18px 0 12px; font-family: var(--serif); font-size: 34px; font-weight: 400; letter-spacing: -.035em; line-height: 1; }
 .teaser-person p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
@@ -152,7 +154,7 @@
   .teaser-asset-list li { grid-template-columns: 1fr; gap: 8px; }
   .teaser-validation { grid-column: auto; }
   .teaser-person { grid-template-columns: 108px 1fr; gap: 20px; min-height: 0; padding: 24px 20px; }
-  .teaser-person img { width: 108px; height: 108px; }
+  .teaser-person-photo { width: 108px; height: 108px; }
   .teaser-person h3 { font-size: 28px; }
   .teaser-round-path article { min-height: auto; padding: 28px 0; border-right: 0; border-bottom: 1px solid var(--white-line); }
   .teaser-round-path h3 { margin-top: 38px; }
@@ -160,5 +162,5 @@
 
 @media (max-width: 430px) {
   .teaser-person { grid-template-columns: 1fr; }
-  .teaser-person img { width: 132px; height: 132px; }
+  .teaser-person-photo { width: 132px; height: 132px; }
 }
