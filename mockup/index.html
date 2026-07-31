@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eee7dc">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Mockup funzionale approvato di Con te, ogni giorno, il percorso AI di TUPENSACI.">
+  <title>Con te, ogni giorno — Mockup funzionale v1.3</title>
+  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="confidentiality.css?v=20260731">
+  <script src="app.js?v=12" defer></script>
+</head>
+<body class="has-confidentiality-notice">
+  <header class="prototype-bar" aria-label="Controlli del prototipo">
+    <div class="prototype-left">
+      <a class="prototype-return" href="../" aria-label="Torna al teaser investitori"><span aria-hidden="true">←</span><span>Torna al progetto</span></a>
+      <button class="prototype-brand" type="button" data-open-dialog="prototype-dialog" aria-label="Apri la mappa del prototipo">
+        <span class="prototype-pulse" aria-hidden="true"></span>
+        <span>Mockup v1.3</span>
+      </button>
+    </div>
+    <div class="scenario-switch" role="group" aria-label="Scenario demo">
+      <button type="button" data-scenario="day1" aria-pressed="true">Primo giorno</button>
+      <button type="button" data-scenario="day14" aria-pressed="false">Giorno 14</button>
+      <button type="button" data-scenario="return" aria-pressed="false">Rientro</button>
+      <button type="button" data-scenario="safety" aria-pressed="false">Sensibile</button>
+    </div>
+    <button class="prototype-menu" type="button" data-open-dialog="prototype-dialog" aria-label="Apri la mappa delle 21 schermate">
+      <span class="prototype-menu-wide">Mappa · 21</span>
+      <span class="prototype-menu-compact" aria-hidden="true">21</span>
+    </button>
+  </header>
+
+  <main class="prototype-stage">
+    <aside class="prototype-guide" aria-label="Guida al prototipo">
+      <p class="guide-kicker">VISIONE APPROVATA · MOCKUP FUNZIONALE V1.3</p>
+      <h1>Dallo spunto di oggi.<br><em>A una continuità personale.</em></h1>
+      <p class="guide-intro">Il telefono a fianco mostra il ciclo completo dell’MVP: accesso, rituale, conversazione, memoria consensuale, ritorno, controllo e sicurezza.</p>
+
+      <div class="guide-progress" aria-live="polite">
+        <span>Schermata</span>
+        <strong><span data-current-screen>01</span><small>/21</small></strong>
+      </div>
+
+      <ol class="guide-flow" aria-label="Passaggi principali del prodotto">
+        <li data-guide-screen="01"><button type="button" data-map-go="01"><span>01</span><strong>Entra</strong><small>Promessa, accesso e fiducia</small></button></li>
+        <li data-guide-screen="05"><button type="button" data-map-go="05"><span>02</span><strong>Incontra</strong><small>Lo spunto di oggi</small></button></li>
+        <li data-guide-screen="07"><button type="button" data-map-go="07"><span>03</span><strong>Conversa</strong><small>Ascolto e piccolo passo</small></button></li>
+        <li data-guide-screen="08"><button type="button" data-map-go="08"><span>04</span><strong>Decidi cosa resta</strong><small>Memoria sotto controllo</small></button></li>
+        <li data-guide-screen="09"><button type="button" data-map-go="09"><span>05</span><strong>Ritrova il filo</strong><small>Il valore al giorno 14</small></button></li>
+        <li data-guide-screen="18"><button type="button" data-map-go="18"><span>06</span><strong>Mantieni il controllo</strong><small>Preferenze, dati e account</small></button></li>
+        <li data-guide-screen="13"><button type="button" data-map-go="13"><span>07</span><strong>Conosci i limiti</strong><small>Sicurezza e risorse</small></button></li>
+      </ol>
+
+      <div class="guide-actions">
+        <button class="button button-primary" type="button" data-map-go="01">Avvia Con te, ogni giorno</button>
+        <button class="button button-secondary" type="button" data-open-dialog="prototype-dialog">Apri tutte le 21 schermate</button>
+      </div>
+      <p class="guide-note">Le risposte restano simulate. Le 21 schermate finalizzano l’esperienza core; checkout italiano, abbonamenti ed entitlement sono requisiti tecnici della build pronta al lancio descritta nel Brief MVP v1.3.</p>
+    </aside>
+
+    <div class="phone-shell" id="phone-shell">
+      <div class="app-chrome" data-app-chrome hidden>
+        <button class="wordmark-button" type="button" data-go="05" aria-label="Vai a Oggi">
+          <span class="wordmark">TUPENSACI</span>
+          <span class="ai-label">AI</span>
+        </button>
+        <div class="chrome-actions">
+          <button class="memory-status" type="button" data-go="12" aria-label="Apri La mia memoria">
+            <span class="memory-dot" aria-hidden="true"></span>
+            <span data-memory-status>Memoria vuota</span>
+          </button>
+          <button class="settings-shortcut" type="button" data-go="18" aria-label="Apri impostazioni e dati">Profilo</button>
+        </div>
+      </div>
+
+      <div class="screen-stack" id="screen-stack">
+        <section class="screen screen-welcome" data-screen="01" aria-labelledby="title-01">
+          <div class="welcome-orbit" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="welcome-top">
+            <p class="wordmark wordmark-large">TUPENSACI <small>AI</small></p>
+            <p class="eyebrow">Uno spazio in cui tornare</p>
+          </div>
+          <div class="welcome-copy">
+            <h1 id="title-01">Il tuo momento, ogni giorno.<br><em>Una relazione che ricorda.</em></h1>
+            <p>TUPENSACI ti aiuta a fermarti, fare chiarezza e ritrovare il filo, giorno dopo giorno.</p>
+          </div>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-go="02">Inizia</button>
+            <button class="button button-quiet" type="button" data-open-dialog="how-dialog">Come funziona</button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="02" aria-labelledby="title-02" hidden>
+          <div class="screen-heading">
+            <button class="back-button" type="button" data-go="01" aria-label="Torna indietro">←</button>
+            <p class="step-label">Prima di iniziare · 1 di 3</p>
+            <h1 id="title-02">Una presenza digitale,<br><em>con limiti chiari.</em></h1>
+          </div>
+          <div class="trust-card">
+            <div class="trust-mark" aria-hidden="true">AI</div>
+            <p>Sono un’AI con la voce e i contenuti di TUPENSACI.</p>
+            <p>Posso ascoltare e aiutarti a riflettere; non sono una persona e non sostituisco un professionista.</p>
+          </div>
+          <ul class="plain-list" aria-label="Principi di fiducia">
+            <li><span aria-hidden="true">01</span> Decidi tu quanto condividere.</li>
+            <li><span aria-hidden="true">02</span> Nulla entra in memoria senza conferma.</li>
+            <li><span aria-hidden="true">03</span> Puoi modificare o cancellare ciò che ricordo.</li>
+          </ul>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-go="14">Ho capito, continua</button>
+            <button class="button button-quiet" type="button" data-open-dialog="privacy-dialog">Privacy in breve</button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="03" aria-labelledby="title-03" hidden>
+          <div class="screen-heading">
+            <button class="back-button" type="button" data-go="02" aria-label="Torna indietro">←</button>
+            <p class="step-label">Il tuo momento · 2 di 3</p>
+            <h1 id="title-03">Su cosa ti farebbe bene ritrovare un po’ di chiarezza?</h1>
+            <p>Non è un’etichetta. È solo un punto da cui cominciare.</p>
+          </div>
+          <fieldset class="choice-grid" data-choice-group="intention">
+            <legend class="sr-only">Scegli un’intenzione</legend>
+            <button type="button" class="choice-card" data-choice="motivazione" aria-pressed="false"><span aria-hidden="true">↗</span> Motivazione</button>
+            <button type="button" class="choice-card" data-choice="relazioni" aria-pressed="false"><span aria-hidden="true">↔</span> Relazioni</button>
+            <button type="button" class="choice-card" data-choice="lavoro" aria-pressed="false"><span aria-hidden="true">○</span> Lavoro</button>
+            <button type="button" class="choice-card" data-choice="cambiamento" aria-pressed="false"><span aria-hidden="true">◇</span> Cambiamento</button>
+            <button type="button" class="choice-card choice-wide" data-choice="altro" aria-pressed="false"><span aria-hidden="true">＋</span> Qualcos’altro</button>
+          </fieldset>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-intention-continue>Continua</button>
+            <button class="button button-quiet" type="button" data-skip-intention>Salta per ora</button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="04" aria-labelledby="title-04" hidden>
+          <div class="screen-heading compact-heading">
+            <button class="back-button" type="button" data-go="03" aria-label="Torna indietro">←</button>
+            <p class="step-label">Il tuo spazio · 3 di 3</p>
+            <h1 id="title-04">Come vuoi che sia questo spazio?</h1>
+          </div>
+          <form id="preferences-form" class="preferences-form">
+            <fieldset class="setting-block">
+              <legend>Il tono che preferisci</legend>
+              <div class="segmented-control">
+                <label><input type="radio" name="tone" value="gentile" checked><span>Gentile</span></label>
+                <label><input type="radio" name="tone" value="diretto"><span>Diretto</span></label>
+                <label><input type="radio" name="tone" value="essenziale"><span>Essenziale</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="setting-block">
+              <legend>Quando vuoi ritrovarlo</legend>
+              <label class="radio-row"><input type="radio" name="rhythm" value="mattina"><span><strong>Ogni mattina</strong><small>Un invito leggero, mai un obbligo</small></span></label>
+              <label class="radio-row"><input type="radio" name="rhythm" value="sera"><span><strong>La sera</strong><small>Per lasciare sedimentare la giornata</small></span></label>
+              <label class="radio-row"><input type="radio" name="rhythm" value="scelgo" checked><span><strong>Scelgo io</strong><small>Lo apro quando mi serve</small></span></label>
+            </fieldset>
+            <div class="memory-optin">
+              <div>
+                <p class="setting-title">Memoria personale</p>
+                <p>Ti proporrò cosa ricordare. Sarai sempre tu a decidere.</p>
+              </div>
+              <label class="switch"><span class="sr-only">Attiva memoria personale</span><input type="checkbox" name="memory" checked><span aria-hidden="true"></span></label>
+            </div>
+            <p class="fine-print">Dati demo fittizi. In questo prototipo restano solo su questo dispositivo.</p>
+            <div class="screen-actions in-flow-actions">
+              <button class="button button-primary" type="submit">Crea il mio spazio</button>
+              <button class="button button-quiet" type="button" data-go="03">Torna indietro</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="screen screen-workbook" data-screen="20" aria-labelledby="title-20" hidden>
+          <div class="screen-heading compact-heading">
+            <button class="back-button" type="button" data-go="04" aria-label="Torna indietro">←</button>
+            <p class="step-label">Con te, ogni giorno · Il ponte con la carta</p>
+            <h1 id="title-20">Hai già<br><em>un workbook TUPENSACI?</em></h1>
+            <p>Collegalo per potenziare il tuo percorso: TUPENSACI AI terrà conto del metodo che stai seguendo, della fase in cui ti trovi e degli obiettivi che hai scelto. Non sostituisce ciò che scrivi sulla carta.</p>
+          </div>
+          <fieldset class="workbook-grid" data-choice-group="workbook">
+            <legend class="sr-only">Scegli il workbook</legend>
+            <button type="button" class="workbook-card" data-workbook="diario" aria-pressed="true"><span>01</span><em class="workbook-badge">Esperienza potenziata</em><strong>Il Diario del Nuovo Inizio</strong><small>Percorso di 4 mesi</small></button>
+            <button type="button" class="workbook-card" data-workbook="crea" aria-pressed="false"><span>02</span><em class="workbook-badge">Esperienza potenziata</em><strong>Crea</strong><small>Percorso di 6 mesi</small></button>
+            <button type="button" class="workbook-card" data-workbook="arte" aria-pressed="false"><span>03</span><em class="workbook-badge">Esperienza potenziata</em><strong>L’Arte</strong><small>Percorso creativo</small></button>
+            <button type="button" class="workbook-card workbook-card-quiet" data-workbook="none" aria-pressed="false"><span>○</span><strong>Non ancora</strong><small>Inizio senza collegare un workbook</small></button>
+          </fieldset>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-workbook-continue>Continua</button>
+          </div>
+        </section>
+
+        <section class="screen screen-workbook-setup" data-screen="21" aria-labelledby="title-21" hidden>
+          <div class="screen-heading compact-heading">
+            <button class="back-button" type="button" data-go="20" aria-label="Torna indietro">←</button>
+            <p class="step-label">Con te, ogni giorno · Solo ciò che scegli tu</p>
+            <h1 id="title-21">Da dove vuoi<br><em>riprendere il filo?</em></h1>
+            <p>Porta nello spazio digitale tre elementi. Potrai cambiarli o rimuoverli in qualsiasi momento.</p>
+          </div>
+          <form id="workbook-form" class="workbook-form">
+            <label>Il punto del percorso
+              <select name="workbookStage">
+                <option value="inizio">Sto iniziando</option>
+                <option value="mese-1">Mese 1</option>
+                <option value="mese-2" selected>Mese 2</option>
+                <option value="mese-3">Mese 3</option>
+                <option value="mese-4">Mese 4 o oltre</option>
+              </select>
+            </label>
+            <label>La promessa che hai scritto all’inizio
+              <textarea name="workbookPromise" rows="3" placeholder="Per esempio: rimettere me stessa al centro.">Rimettere me stessa al centro, senza aspettare di avere più tempo.</textarea>
+            </label>
+            <label>Il “me che vorrei”
+              <textarea name="desiredSelf" rows="3" placeholder="Per esempio: una persona che protegge il proprio tempo.">Una persona che protegge il proprio tempo senza sentirsi in colpa.</textarea>
+            </label>
+            <p class="fine-print">Nell’MVP questi elementi vengono inseriti manualmente. Le ristampe future potranno aprire questo passaggio con un QR dedicato; nessuna lettura automatica della scrittura.</p>
+            <button class="button button-primary" type="submit">Collega il mio percorso</button>
+            <button class="button button-quiet" type="button" data-skip-workbook>Continua senza collegarlo</button>
+          </form>
+        </section>
+
+        <section class="screen screen-today" data-screen="05" aria-labelledby="title-05" hidden>
+          <div class="today-heading">
+            <div>
+              <p class="eyebrow" data-today-date>Lunedì, 13 luglio</p>
+              <h1 id="title-05">Buongiorno, Marie.</h1>
+            </div>
+            <button class="round-button" type="button" data-go="11" aria-label="Apri Con te, ogni giorno">↗</button>
+          </div>
+          <div class="workbook-context" data-workbook-context><span>Il Diario del Nuovo Inizio</span><strong>Mese 2</strong></div>
+          <article class="phrase-card">
+            <div class="phrase-card-top">
+              <span class="theme-pill" data-phrase-theme>Cambiamento</span>
+              <button class="save-phrase" type="button" data-save-phrase aria-pressed="false"><span aria-hidden="true">＋</span><span data-save-label>Salva</span></button>
+            </div>
+            <blockquote data-daily-phrase>“Non devi avere tutto chiaro per fare il prossimo passo.”</blockquote>
+            <div class="phrase-rule" aria-hidden="true"><span></span></div>
+            <p class="phrase-source" data-phrase-source>Dal Diario del Nuovo Inizio · Mese 2 · Selezione editoriale demo</p>
+          </article>
+          <div class="personal-bridge">
+            <p data-bridge-copy>Hai scelto di partire dal cambiamento. Vuoi vedere dove questo spunto incontra il tuo momento?</p>
+          </div>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-go="06">Portala su di me</button>
+            <button class="button button-quiet" type="button" data-not-today>Non oggi</button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="06" aria-labelledby="title-06" hidden>
+          <div class="screen-heading">
+            <button class="back-button" type="button" data-go="05" aria-label="Torna indietro">←</button>
+            <p class="step-label">Una domanda, non un test</p>
+            <h1 id="title-06">Quando pensi al cambiamento che stai attraversando, qual è il prossimo passo che continui a rimandare?</h1>
+          </div>
+          <form id="reflection-form" class="reflection-form">
+            <label for="reflection-input">La tua risposta</label>
+            <textarea id="reflection-input" name="reflection" rows="6" placeholder="Scrivi come viene. Anche poche parole bastano."></textarea>
+            <div class="prompt-suggestions" aria-label="Suggerimenti di risposta">
+              <button type="button" data-suggestion="Dire di no a un impegno che non riesco a sostenere.">Dire un no</button>
+              <button type="button" data-suggestion="Chiedere aiuto invece di fare tutto da sola.">Chiedere aiuto</button>
+              <button type="button" data-suggestion="Proteggere del tempo che sia davvero mio.">Proteggere tempo</button>
+            </div>
+            <p class="input-note"><span class="memory-dot" aria-hidden="true"></span> Questa risposta non viene ricordata automaticamente.</p>
+            <div class="screen-actions in-flow-actions">
+              <button class="button button-primary" type="submit">Invia</button>
+              <button class="button button-quiet" type="button" data-reflect-only>Preferisco solo riflettere</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="screen screen-conversation" data-screen="07" aria-labelledby="title-07" hidden>
+          <div class="screen-heading conversation-heading">
+            <button class="back-button" type="button" data-go="06" aria-label="Torna indietro">←</button>
+            <div>
+              <p class="step-label">Riflessione di oggi</p>
+              <h1 id="title-07">Un passo alla volta</h1>
+            </div>
+          </div>
+          <div class="conversation-flow">
+            <div class="message message-user">
+              <p class="message-label">Tu</p>
+              <p data-user-message>Vorrei proteggere del tempo che sia davvero mio.</p>
+            </div>
+            <div class="message message-ai">
+              <p class="message-label">TUPENSACI · AI</p>
+              <p data-ai-listen>Non sembra che ti manchi la volontà. Forse il punto è dare a quel tempo lo stesso valore che dai agli impegni presi con gli altri.</p>
+              <p data-ai-question>Qual è una cosa abbastanza piccola da poterla fare oggi?</p>
+            </div>
+          </div>
+          <form id="small-step-form" class="small-step-card">
+            <label for="small-step-input">Il mio piccolo passo</label>
+            <input id="small-step-input" name="smallStep" value="Bloccare due sere in agenda senza lavoro" autocomplete="off">
+            <p>Nessun promemoria punitivo. Potrai rivederlo quando vorrai.</p>
+            <button class="button button-primary" type="submit">Scelgo il mio passo</button>
+          </form>
+          <div class="conversation-footer">
+            <button class="text-button" type="button" data-close-here>Chiudi qui</button>
+            <div class="helpful-control" aria-label="Questa risposta è stata utile?">
+              <span>Utile?</span>
+              <button type="button" data-feedback="yes" aria-label="Sì, utile">Sì</button>
+              <button type="button" data-feedback="no" aria-label="No, non utile">No</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen screen-memory-proposal" data-screen="08" aria-labelledby="title-08" hidden>
+          <div class="memory-backdrop-copy">
+            <p class="eyebrow">La riflessione è conclusa</p>
+            <h1 id="title-08">Il passo è tuo.<br>La memoria resta sotto il tuo controllo.</h1>
+          </div>
+          <div class="memory-sheet" data-memory-sheet>
+            <div class="sheet-handle" aria-hidden="true"></div>
+            <div class="memory-sheet-icon" aria-hidden="true">◎</div>
+            <p class="step-label">Memoria proposta</p>
+            <h2>Vuoi che ricordi questo?</h2>
+            <blockquote data-proposed-memory>“Stai cercando di proteggere due sere alla settimana dal lavoro.”</blockquote>
+            <dl class="memory-meta">
+              <div><dt>Categoria</dt><dd>Intenzione</dd></div>
+              <div><dt>Perché</dt><dd>Per riprenderla solo quando sarà pertinente</dd></div>
+            </dl>
+            <div class="screen-actions in-flow-actions">
+              <button class="button button-primary" type="button" data-accept-memory>Sì, ricordalo</button>
+              <div class="paired-actions">
+                <button class="button button-secondary" type="button" data-edit-proposed>Modifica</button>
+                <button class="button button-quiet" type="button" data-reject-memory>No, non ricordare</button>
+              </div>
+            </div>
+          </div>
+          <div class="memory-confirmed" data-memory-confirmed hidden>
+            <span class="confirmation-mark" aria-hidden="true">✓</span>
+            <p class="step-label">Memoria confermata</p>
+            <h2>Ricorderò solo ciò che hai scelto.</h2>
+            <p>Potrai correggerlo o cancellarlo in qualsiasi momento.</p>
+            <button class="button button-primary" type="button" data-go="11">Vai a Con te, ogni giorno</button>
+          </div>
+        </section>
+
+        <section class="screen screen-return" data-screen="09" aria-labelledby="title-09" hidden>
+          <div class="today-heading">
+            <div>
+              <p class="eyebrow">Due settimane dopo</p>
+              <h1 id="title-09">Bentornata, Marie.</h1>
+            </div>
+            <button class="round-button" type="button" data-go="11" aria-label="Apri Con te, ogni giorno">↗</button>
+          </div>
+          <div class="return-note">
+            <p class="message-label"><span class="memory-dot" aria-hidden="true"></span> Dal filo che hai scelto di conservare</p>
+            <p>La settimana scorsa mi avevi detto che volevi proteggere due sere dal lavoro.</p>
+            <strong>Com’è andata?</strong>
+          </div>
+          <article class="phrase-card phrase-card-small">
+            <span class="theme-pill">Confini</span>
+            <blockquote>“Dire no a qualcosa può essere un modo per dire sì a ciò che conta.”</blockquote>
+            <p class="phrase-source">Dal quaderno TUPENSACI · Selezione editoriale demo</p>
+          </article>
+          <p class="return-permission">Se oggi preferisci altro, lasciamo qui questo filo e ricominciamo senza dover recuperare nulla.</p>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-go="10">Ne parliamo</button>
+            <button class="button button-quiet" type="button" data-go="05">Ripartiamo da oggi</button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="10" aria-labelledby="title-10" hidden>
+          <div class="screen-heading">
+            <button class="back-button" type="button" data-go="09" aria-label="Torna indietro">←</button>
+            <p class="step-label">Un’ipotesi, non un’etichetta</p>
+            <h1 id="title-10">Posso provare a collegare due fili?</h1>
+          </div>
+          <article class="pattern-card">
+            <div class="thread-visual" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p>Potrebbe esserci un filo tra la fatica a dire no e il bisogno di non deludere gli altri.</p>
+            <strong>Ti risuona o sto leggendo male?</strong>
+          </article>
+          <div class="caution-note">
+            <span aria-hidden="true">i</span>
+            <p>È solo una lettura possibile. La tua correzione conta più della mia ipotesi e non verrà salvata senza conferma.</p>
+          </div>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-pattern-answer="yes">Mi risuona</button>
+            <div class="paired-actions">
+              <button class="button button-secondary" type="button" data-pattern-answer="no">Non è così</button>
+              <button class="button button-quiet" type="button" data-pattern-answer="edit">Correggi</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen screen-path" data-screen="11" aria-labelledby="title-11" hidden>
+          <div class="today-heading path-heading">
+            <div>
+              <p class="eyebrow">Il mio spazio</p>
+              <h1 id="title-11">Con te, ogni giorno</h1>
+            </div>
+            <button class="round-button" type="button" data-go="05" aria-label="Chiudi Con te, ogni giorno">×</button>
+          </div>
+          <section class="emerging-thread" aria-labelledby="thread-title">
+            <p class="step-label">Fili che stanno emergendo</p>
+            <h2 id="thread-title">Proteggere tempo ed energia</h2>
+            <p>È un’ipotesi costruita dai momenti che hai scelto di conservare, non una definizione di te.</p>
+          </section>
+          <div class="timeline" data-timeline>
+            <article class="timeline-item">
+              <div class="timeline-date"><strong>13</strong><span>LUG</span></div>
+              <div><p class="timeline-kind">Piccolo passo</p><h3>Due sere senza lavoro</h3><p>Scelto da te · In corso</p></div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date"><strong>13</strong><span>LUG</span></div>
+              <div><p class="timeline-kind">Frase salvata</p><h3>Non devi avere tutto chiaro…</h3><p>Fonte: quaderno TUPENSACI</p></div>
+            </article>
+          </div>
+          <button class="button button-secondary full-button" type="button" data-open-moment>Apri un momento</button>
+          <button class="memory-manage-link" type="button" data-go="12"><span><span class="memory-dot" aria-hidden="true"></span> Memoria sotto il tuo controllo</span><strong>Gestisci →</strong></button>
+          <button class="memory-manage-link" type="button" data-go="18"><span>Preferenze, privacy e account</span><strong>Apri →</strong></button>
+        </section>
+
+        <section class="screen screen-memory" data-screen="12" aria-labelledby="title-12" hidden>
+          <div class="screen-heading memory-heading">
+            <button class="back-button" type="button" data-go="11" aria-label="Torna indietro">←</button>
+            <p class="step-label">Visibile · Modificabile · Cancellabile</p>
+            <h1 id="title-12">La mia memoria</h1>
+            <p>Qui trovi solo ciò che hai confermato. Le conversazioni complete non diventano un profilo su di te.</p>
+          </div>
+          <div class="memory-summary">
+            <span class="memory-summary-mark" aria-hidden="true">◎</span>
+            <p><strong data-memory-count>0 elementi</strong><br><span>salvati su questo dispositivo</span></p>
+          </div>
+          <div class="memory-categories" aria-label="Categorie che possono essere ricordate">
+            <span>Preferenze</span><span>Intenzioni</span><span>Temi</span><span>Piccoli passi</span><span>Confini</span>
+          </div>
+          <div class="memory-list" data-memory-list></div>
+          <div class="empty-memory" data-empty-memory hidden>
+            <p>Nessun ricordo confermato.</p>
+            <span>Quando vorrai, TUPENSACI ti proporrà cosa può essere utile conservare.</span>
+          </div>
+          <div class="screen-actions memory-actions">
+            <button class="button button-primary" type="button" data-save-memories>Salva modifiche</button>
+            <div class="paired-actions">
+              <button class="button button-secondary" type="button" data-export-memory>Esporta</button>
+              <button class="button button-danger-quiet" type="button" data-clear-memory>Cancella tutto</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen screen-safety" data-screen="13" aria-labelledby="title-13" hidden>
+          <div class="safety-topline">
+            <p class="wordmark">TUPENSACI <small>AI</small></p>
+            <span>Aiuto immediato</span>
+          </div>
+          <div class="safety-heading">
+            <span class="safety-symbol" aria-hidden="true">!</span>
+            <p class="step-label">Questo momento richiede una presenza umana</p>
+            <h1 id="title-13">Non affrontarlo da sola.</h1>
+            <p>Quello che hai scritto può indicare un pericolo immediato. Io sono un’AI e non posso offrirti l’aiuto urgente di cui potresti avere bisogno.</p>
+          </div>
+          <div class="urgent-card">
+            <h2>Se potresti farti del male adesso</h2>
+            <p>Allontanati da ciò che potresti usare per ferirti e contatta subito qualcuno che possa stare fisicamente con te.</p>
+            <!-- Dati per la demo verificati il 13/07/2026 su 112.gov.it e telefonoamico.it.
+                 Prima di una beta reale andranno localizzati e validati nel protocollo di crisi. -->
+            <a class="button button-safety" href="tel:112">Chiama il 112 ora</a>
+            <p class="resource-note">Numero unico di emergenza in Italia e nell’Unione Europea.</p>
+          </div>
+          <div class="screen-actions safety-actions">
+            <button class="button button-primary" type="button" data-show-resources>Vedi altre risorse</button>
+            <a class="button button-quiet" href="tel:" data-trusted-person>Chiama una persona fidata</a>
+          </div>
+          <div class="resource-panel" data-resource-panel hidden>
+            <h2>Parla con una persona, ora</h2>
+            <a href="tel:0223272327"><strong>Telefono Amico Italia</strong><span>02 2327 2327 · tutti i giorni, 9–24</span></a>
+            <a href="https://www.telefonoamico.it/cosa-facciamo/come-contattarci/" target="_blank" rel="noreferrer"><strong>Altri modi per contattarli</strong><span>Sito ufficiale di Telefono Amico Italia ↗</span></a>
+            <p>Se non sei in Italia, chiama il numero di emergenza del luogo in cui ti trovi.</p>
+          </div>
+          <button class="safety-exit" type="button" data-go="05">Esci da questa schermata</button>
+        </section>
+
+        <section class="screen screen-access" data-screen="14" aria-labelledby="title-14" hidden>
+          <div class="screen-heading">
+            <button class="back-button" type="button" data-go="02" aria-label="Torna indietro">←</button>
+            <p class="step-label">Accesso · Il tuo spazio personale</p>
+            <h1 id="title-14">Uno spazio protetto,<br><em>solo tuo.</em></h1>
+            <p>Nel prodotto reale accederai con un link sicuro via email. Nessuna password da ricordare.</p>
+          </div>
+          <form id="access-form" class="access-card">
+            <label for="access-email">La tua email</label>
+            <input id="access-email" name="email" type="email" value="marie@example.com" autocomplete="email">
+            <p class="input-note">Account demo. L’indirizzo non viene inviato né salvato online.</p>
+            <button class="button button-primary" type="submit">Continua come Marie</button>
+          </form>
+          <div class="trust-inline">
+            <span aria-hidden="true">◎</span>
+            <p><strong>Perché serve un account?</strong><br>Per separare il tuo percorso da quello degli altri e proteggere memoria e conversazioni.</p>
+          </div>
+        </section>
+
+        <section class="screen screen-consent" data-screen="15" aria-labelledby="title-15" hidden>
+          <div class="screen-heading compact-heading">
+            <button class="back-button" type="button" data-go="21" aria-label="Torna indietro">←</button>
+            <p class="step-label">Consensi · Separati e modificabili</p>
+            <h1 id="title-15">Decidi tu<br><em>che cosa attivare.</em></h1>
+          </div>
+          <form id="consent-form" class="consent-form">
+            <label class="consent-row required-consent">
+              <input type="checkbox" name="serviceConsent" required checked>
+              <span><strong>Uso del servizio</strong><small>Necessario per creare l’account e rispondere alle tue richieste.</small></span>
+            </label>
+            <label class="consent-row">
+              <input type="checkbox" name="memoryConsent" checked>
+              <span><strong>Memoria personale</strong><small>Ogni elemento importante verrà comunque proposto e confermato da te.</small></span>
+            </label>
+            <label class="consent-row">
+              <input type="checkbox" name="reminderConsent">
+              <span><strong>Inviti a tornare</strong><small>Promemoria leggeri nel momento scelto. Nessuna comunicazione commerciale.</small></span>
+            </label>
+            <p class="fine-print">Nel prodotto reale: informativa completa, base giuridica e tempi di conservazione saranno verificati prima della beta.</p>
+            <button class="button button-primary" type="submit">Entra nel mio spazio</button>
+            <button class="button button-quiet" type="button" data-open-dialog="privacy-dialog">Rileggi privacy in breve</button>
+          </form>
+        </section>
+
+        <section class="screen screen-return-absence" data-screen="16" aria-labelledby="title-16" hidden>
+          <div class="absence-orbit" aria-hidden="true"><span></span><span></span></div>
+          <div class="screen-heading">
+            <p class="step-label">Rientro dopo 23 giorni</p>
+            <h1 id="title-16">Bentornata.<br><em>Non c’è nulla da recuperare.</em></h1>
+            <p>Puoi riprendere un filo che avevi scelto di conservare oppure cominciare semplicemente da oggi.</p>
+          </div>
+          <article class="resume-card">
+            <p class="message-label"><span class="memory-dot is-active" aria-hidden="true"></span> Un filo ancora disponibile</p>
+            <h2>Proteggere tempo ed energia</h2>
+            <p>“Volevo tenere due sere alla settimana libere dal lavoro.”</p>
+            <button class="button button-primary" type="button" data-resume-thread>Riprendiamo da qui</button>
+          </article>
+          <button class="button button-secondary full-button" type="button" data-start-fresh>Partiamo solo da oggi</button>
+          <p class="return-permission">L’assenza non riduce il tuo percorso e non genera notifiche di fallimento.</p>
+        </section>
+
+        <section class="screen screen-moment" data-screen="17" aria-labelledby="title-17" hidden>
+          <div class="screen-heading compact-heading">
+            <button class="back-button" type="button" data-go="11" aria-label="Torna al percorso">←</button>
+            <p class="step-label">13 luglio · Momento salvato</p>
+            <h1 id="title-17">Proteggere tempo ed energia</h1>
+          </div>
+          <article class="moment-quote">
+            <p class="message-label">La frase da cui eri partita</p>
+            <blockquote>“Non devi avere tutto chiaro per fare il prossimo passo.”</blockquote>
+          </article>
+          <div class="moment-section">
+            <p class="message-label">Le tue parole</p>
+            <p data-moment-reflection>Vorrei proteggere del tempo che sia davvero mio.</p>
+          </div>
+          <div class="moment-section moment-step">
+            <p class="message-label">Il piccolo passo scelto</p>
+            <h2 data-moment-step>Bloccare due sere in agenda senza lavoro</h2>
+            <div class="status-choice" aria-label="Come è andata?">
+              <button type="button" data-step-status="done">Fatto</button>
+              <button type="button" data-step-status="partial">In parte</button>
+              <button type="button" data-step-status="open">È ancora aperto</button>
+            </div>
+          </div>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-go="07">Continua da questo filo</button>
+            <button class="button button-quiet" type="button" data-go="11">Torna al percorso</button>
+          </div>
+        </section>
+
+        <section class="screen screen-settings" data-screen="18" aria-labelledby="title-18" hidden>
+          <div class="screen-heading compact-heading">
+            <button class="back-button" type="button" data-go="05" aria-label="Torna a Oggi">←</button>
+            <p class="step-label">Controllo del tuo spazio</p>
+            <h1 id="title-18">Preferenze e dati</h1>
+          </div>
+          <div class="account-summary">
+            <span aria-hidden="true">M</span>
+            <div><strong>Marie · account demo</strong><small>marie@example.com</small></div>
+          </div>
+          <form id="settings-form" class="settings-form">
+            <fieldset class="setting-block">
+              <legend>Tono delle risposte</legend>
+              <div class="segmented-control">
+                <label><input type="radio" name="settingsTone" value="gentile" checked><span>Gentile</span></label>
+                <label><input type="radio" name="settingsTone" value="diretto"><span>Diretto</span></label>
+                <label><input type="radio" name="settingsTone" value="essenziale"><span>Essenziale</span></label>
+              </div>
+            </fieldset>
+            <label class="setting-select"><span>Ritmo</span><select name="settingsRhythm"><option value="scelgo">Scelgo io</option><option value="mattina">Ogni mattina</option><option value="sera">La sera</option></select></label>
+            <label class="setting-toggle"><span><strong>Memoria personale</strong><small>Disattivandola, nessun nuovo elemento verrà proposto.</small></span><span class="switch"><input type="checkbox" name="settingsMemory" checked><span aria-hidden="true"></span></span></label>
+            <label class="setting-toggle"><span><strong>Inviti a tornare</strong><small>Promemoria non commerciali e non colpevolizzanti.</small></span><span class="switch"><input type="checkbox" name="settingsReminders"><span aria-hidden="true"></span></span></label>
+            <button class="button button-primary" type="submit">Salva preferenze</button>
+          </form>
+          <div class="data-actions">
+            <button type="button" data-go="12"><span>Vedi e modifica la memoria</span><strong>Apri →</strong></button>
+            <button type="button" data-export-memory><span>Esporta i miei dati</span><strong>Esporta →</strong></button>
+            <button class="danger-row" type="button" data-delete-account><span>Cancella account e dati</span><strong>Elimina →</strong></button>
+          </div>
+        </section>
+
+        <section class="screen screen-error" data-screen="19" aria-labelledby="title-19" hidden>
+          <div class="error-symbol" aria-hidden="true">↻</div>
+          <div class="screen-heading">
+            <p class="step-label">Connessione interrotta</p>
+            <h1 id="title-19">Quello che hai scritto<br><em>è ancora qui.</em></h1>
+            <p>Non abbiamo inviato la tua risposta. Puoi riprovare senza riscriverla oppure tornare più tardi.</p>
+          </div>
+          <div class="recovered-draft">
+            <p class="message-label">Bozza conservata su questo dispositivo</p>
+            <p data-recovered-copy>Vorrei proteggere del tempo che sia davvero mio.</p>
+          </div>
+          <div class="screen-actions">
+            <button class="button button-primary" type="button" data-retry-response>Riprova ora</button>
+            <button class="button button-quiet" type="button" data-go="11">Torna a Con te, ogni giorno</button>
+          </div>
+          <p class="fine-print">Nel prodotto reale l’errore viene registrato senza includere il testo della conversazione nei log tecnici.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <dialog id="prototype-dialog" class="prototype-dialog" aria-labelledby="prototype-title">
+    <form method="dialog" class="dialog-shell">
+      <div class="dialog-heading">
+        <div><p class="step-label">Strumenti separati dall’esperienza</p><h2 id="prototype-title">Prototype map</h2></div>
+        <button class="dialog-close" value="cancel" aria-label="Chiudi">×</button>
+      </div>
+      <p class="prototype-disclaimer">Account demo “Marie” · dati fittizi · stato persistente solo in locale.</p>
+      <nav class="screen-map" aria-label="Vai a una schermata">
+        <button type="button" data-map-go="01"><span>01</span>Promessa</button>
+        <button type="button" data-map-go="02"><span>02</span>Fiducia</button>
+        <button type="button" data-map-go="14"><span>03</span>Accesso</button>
+        <button type="button" data-map-go="03"><span>04</span>Intenzione</button>
+        <button type="button" data-map-go="04"><span>05</span>Tono e ritmo</button>
+        <button type="button" data-map-go="20"><span>06</span>Workbook</button>
+        <button type="button" data-map-go="21"><span>07</span>Ponte workbook</button>
+        <button type="button" data-map-go="15"><span>08</span>Consensi</button>
+        <button type="button" data-map-go="05"><span>09</span>Oggi</button>
+        <button type="button" data-map-go="06"><span>10</span>Domanda</button>
+        <button type="button" data-map-go="07"><span>11</span>Conversazione</button>
+        <button type="button" data-map-go="08"><span>12</span>Memoria proposta</button>
+        <button type="button" data-map-go="09"><span>13</span>Giorno 14</button>
+        <button type="button" data-map-go="10"><span>14</span>Pattern</button>
+        <button type="button" data-map-go="16"><span>15</span>Rientro</button>
+        <button type="button" data-map-go="11"><span>16</span>Con te, ogni giorno</button>
+        <button type="button" data-map-go="17"><span>17</span>Dettaglio</button>
+        <button type="button" data-map-go="12"><span>18</span>Memoria</button>
+        <button type="button" data-map-go="18"><span>19</span>Impostazioni</button>
+        <button type="button" data-map-go="19"><span>20</span>Errore sicuro</button>
+        <button type="button" data-map-go="13"><span>21</span>Sicurezza</button>
+      </nav>
+      <details class="prototype-notes">
+        <summary>Decisioni provvisorie del mockup</summary>
+        <ul>
+          <li>Lo “spunto di oggi” è l’ingresso AI autonomo: può essere una frase, una domanda o un check-in coerente con area, memoria e workbook collegato.</li>
+          <li>Email e WhatsApp sono promemoria facoltativi con link alla web app; non inviano una frase generica uguale a tutti.</li>
+          <li>Il tono predefinito è gentile; resta modificabile nell’onboarding.</li>
+          <li>Il ritorno usa una memoria confermata e formula i pattern come ipotesi.</li>
+          <li>Il workbook è un contesto esplicito e facoltativo: l’esperienza funziona anche senza collegarlo.</li>
+          <li>Il primo MVP non legge la scrittura: accesso manuale per le copie esistenti, QR predisposto per le ristampe future.</li>
+          <li>Accesso, consensi, rientro, impostazioni e stati di errore sono inclusi nel perimetro di sviluppo.</li>
+          <li>Checkout italiano, abbonamenti ed entitlement sono inclusi nella build pronta al lancio, ma restano fuori dalle 21 schermate dell’esperienza core.</li>
+          <li>Le risorse di sicurezza sono localizzate sull’Italia per il test demo.</li>
+        </ul>
+      </details>
+      <div class="prototype-tools">
+        <button class="button button-secondary" type="button" data-simulate-error>Simula errore sicuro</button>
+        <button class="button button-danger-quiet" type="button" data-reset-demo>Reset demo</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="how-dialog" class="info-dialog" aria-labelledby="how-title">
+    <form method="dialog" class="dialog-shell">
+      <button class="dialog-close floating-close" value="cancel" aria-label="Chiudi">×</button>
+      <p class="step-label">Meno di cinque minuti</p>
+      <h2 id="how-title">Uno spunto diventa un filo.</h2>
+      <ol class="flow-list">
+        <li><span>01</span><div><strong>Inizia</strong><p>Una frase, una domanda o un check-in apre il momento.</p></div></li>
+        <li><span>02</span><div><strong>Collega</strong><p>Una domanda la porta nella tua vita reale.</p></div></li>
+        <li><span>03</span><div><strong>Scegli</strong><p>Chiudi con un passo piccolo e possibile.</p></div></li>
+        <li><span>04</span><div><strong>Decidi cosa resta</strong><p>Niente viene ricordato senza il tuo sì.</p></div></li>
+      </ol>
+      <button class="button button-primary" value="cancel">Ho capito</button>
+    </form>
+  </dialog>
+
+  <dialog id="privacy-dialog" class="info-dialog" aria-labelledby="privacy-title">
+    <form method="dialog" class="dialog-shell">
+      <button class="dialog-close floating-close" value="cancel" aria-label="Chiudi">×</button>
+      <p class="step-label">Privacy in breve</p>
+      <h2 id="privacy-title">La memoria serve alla continuità. Non alla pubblicità.</h2>
+      <ul class="privacy-list">
+        <li>Confermi ogni ricordo importante prima che venga salvato.</li>
+        <li>Puoi vedere, correggere, esportare o cancellare tutto.</li>
+        <li>Nessuna diagnosi, etichetta psicologica o inferenza sulla salute entra nel profilo.</li>
+        <li>Nel prototipo i dati restano nel browser di questo dispositivo.</li>
+      </ul>
+      <button class="button button-primary" value="cancel">Torna all’esperienza</button>
+    </form>
+  </dialog>
+
+  <dialog id="edit-memory-dialog" class="info-dialog" aria-labelledby="edit-memory-title">
+    <form method="dialog" class="dialog-shell" id="edit-memory-form">
+      <button class="dialog-close floating-close" value="cancel" aria-label="Chiudi">×</button>
+      <p class="step-label">Correggi prima di ricordare</p>
+      <h2 id="edit-memory-title">Come vuoi formularlo?</h2>
+      <label class="dialog-field" for="edit-memory-input">Memoria proposta</label>
+      <textarea id="edit-memory-input" rows="4"></textarea>
+      <div class="dialog-actions">
+        <button class="button button-primary" value="default" data-save-proposed-edit>Usa questa versione</button>
+        <button class="button button-quiet" value="cancel">Annulla</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="clear-dialog" class="info-dialog" aria-labelledby="clear-title">
+    <form method="dialog" class="dialog-shell">
+      <p class="step-label">Azione reversibile solo con un nuovo consenso</p>
+      <h2 id="clear-title">Cancellare tutta la memoria?</h2>
+      <p>TUPENSACI non userà più questi elementi per riprendere il filo. Le preferenze del prototipo resteranno invariate.</p>
+      <div class="dialog-actions">
+        <button class="button button-danger" value="default" data-confirm-clear>Cancella tutto</button>
+        <button class="button button-quiet" value="cancel">Annulla</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="feedback-dialog" class="info-dialog" aria-labelledby="feedback-title">
+    <form method="dialog" class="dialog-shell">
+      <button class="dialog-close floating-close" value="cancel" aria-label="Chiudi">×</button>
+      <p class="step-label">Riparare la conversazione</p>
+      <h2 id="feedback-title">Cosa non ti ha aiutato?</h2>
+      <div class="feedback-reasons" role="group" aria-label="Motivo del feedback">
+        <button type="button" data-feedback-reason="generica">Era troppo generica</button>
+        <button type="button" data-feedback-reason="tono">Non era il tono giusto</button>
+        <button type="button" data-feedback-reason="lettura">Non mi sono riconosciuta</button>
+      </div>
+      <button class="button button-primary" type="button" data-try-alternative>Prova in un altro modo</button>
+      <button class="button button-quiet" value="cancel">Lascia così</button>
+    </form>
+  </dialog>
+
+  <dialog id="delete-account-dialog" class="info-dialog" aria-labelledby="delete-account-title">
+    <form method="dialog" class="dialog-shell">
+      <p class="step-label">Account e dati personali</p>
+      <h2 id="delete-account-title">Cancellare tutto?</h2>
+      <p>Nel prodotto reale questa azione elimina account, memoria e conversazioni secondo i tempi indicati nell’informativa. Nel mockup ripristina la demo.</p>
+      <div class="dialog-actions">
+        <button class="button button-danger" type="button" data-confirm-delete-account>Cancella account demo</button>
+        <button class="button button-quiet" value="cancel">Annulla</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast hidden></div>
+  <aside class="confidentiality-notice" aria-label="Avviso di riservatezza"><div class="confidentiality-notice__inner"><strong>Materiale riservato</strong><p>Dati, contenuti e proiezioni sono condivisi esclusivamente per la valutazione del progetto TUPENSACI. È vietato utilizzarli, riprodurli o diffonderli, anche parzialmente, senza autorizzazione scritta di TUPENSACI.</p></div></aside>
+</body>
+</html>

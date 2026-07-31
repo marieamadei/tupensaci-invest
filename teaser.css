@@ -70,6 +70,11 @@
 .teaser-boundary { display: grid; grid-template-columns: 190px 1fr; gap: 32px; margin-top: 76px; padding: 25px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .teaser-boundary b { color: var(--green); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
 .teaser-boundary p { max-width: 800px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.teaser-full-mockup { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 56px; align-items: end; margin-top: 28px; padding: 36px; color: white; background: var(--green-2); }
+.teaser-full-mockup > div > span { color: var(--gold-soft); font-size: 9px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+.teaser-full-mockup h3 { margin: 18px 0 10px; font-family: var(--serif); font-size: clamp(30px, 4vw, 48px); font-weight: 400; letter-spacing: -.035em; line-height: 1.05; }
+.teaser-full-mockup p { max-width: 730px; margin: 0; color: rgba(255,255,255,.66); font-size: 13px; line-height: 1.65; }
+.teaser-full-mockup .button { min-width: 245px; color: var(--deep); background: var(--gold-soft); border-color: var(--gold-soft); }
 
 .teaser-advantage { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 70px; align-items: center; }
 .teaser-advantage .product-visual { min-height: 650px; }
@@ -110,6 +115,8 @@
 
 @media (max-width: 960px) {
   .teaser-hero-grid, .teaser-advantage, .teaser-access-grid { grid-template-columns: 1fr; }
+  .teaser-full-mockup { grid-template-columns: 1fr; gap: 28px; align-items: start; }
+  .teaser-full-mockup .button { width: fit-content; }
   .teaser-round-card { max-width: 520px; }
   .teaser-problem-grid { margin-left: 0; }
   .teaser-mockup { grid-template-columns: repeat(2, 1fr); }
@@ -130,6 +137,8 @@
   .teaser-proof article { min-height: auto; padding: 24px 18px !important; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
   .teaser-problem-grid { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }
   .teaser-boundary { grid-template-columns: 1fr; gap: 10px; }
+  .teaser-full-mockup { padding: 26px 22px; }
+  .teaser-full-mockup .button { width: 100%; min-width: 0; }
   .teaser-phone, .teaser-phone.featured, .teaser-phone:last-child { grid-column: auto; width: 100%; min-height: 610px; transform: none; }
   .teaser-advantage .product-visual { min-height: 430px; }
   .teaser-asset-list li { grid-template-columns: 1fr; gap: 8px; }
