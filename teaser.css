@@ -16,6 +16,7 @@
 .teaser-hero .display { max-width: 980px; font-size: clamp(54px, 7.2vw, 104px); line-height: .96; }
 .teaser-hero .hero-mark { width: min(270px, 46vw); margin-bottom: 34px; filter: invert(1); mix-blend-mode: screen; opacity: .82; }
 .teaser-hero .lead { max-width: 780px; }
+.teaser-hero-positioning { max-width: 760px; margin: 24px 0 0; padding-left: 20px; color: rgba(255,255,255,.68); border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 17px; line-height: 1.55; }
 .teaser-round-card { padding: 28px; border: 1px solid rgba(232,220,196,.28); background: rgba(255,255,255,.055); backdrop-filter: blur(14px); }
 .teaser-round-card > span { color: var(--gold-soft); font-size: 9px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
 .teaser-round-card > strong { display: block; margin-top: 25px; font-family: var(--serif); font-size: 58px; font-weight: 400; letter-spacing: -.05em; line-height: 1; }
@@ -24,6 +25,7 @@
 .teaser-round-card dl div { display: flex; justify-content: space-between; gap: 18px; padding: 13px 0; border-top: 1px solid var(--white-line); }
 .teaser-round-card dt { color: rgba(255,255,255,.46); font-size: 10px; }
 .teaser-round-card dd { margin: 0; color: white; font-size: 11px; text-align: right; }
+.teaser-round-card > small { display: block; margin-top: 13px; color: rgba(255,255,255,.4); font-size: 9px; line-height: 1.45; }
 
 .teaser-proof { display: grid; grid-template-columns: repeat(4, 1fr); color: white; background: var(--green-2); border-top: 1px solid rgba(255,255,255,.12); }
 .teaser-proof article { min-height: 150px; padding: 30px; border-right: 1px solid rgba(255,255,255,.13); }
@@ -70,6 +72,7 @@
 .teaser-boundary { display: grid; grid-template-columns: 190px 1fr; gap: 32px; margin-top: 76px; padding: 25px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .teaser-boundary b { color: var(--green); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
 .teaser-boundary p { max-width: 800px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.teaser-boundary + .teaser-boundary { margin-top: 0; border-top: 0; }
 .teaser-full-mockup { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 56px; align-items: end; margin-top: 28px; padding: 36px; color: white; background: var(--green-2); }
 .teaser-full-mockup > div > span { color: var(--gold-soft); font-size: 9px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
 .teaser-full-mockup h3 { margin: 18px 0 10px; font-family: var(--serif); font-size: clamp(30px, 4vw, 48px); font-weight: 400; letter-spacing: -.035em; line-height: 1.05; }
@@ -93,6 +96,9 @@
 .teaser-validation > span { color: var(--gold-soft); }
 .teaser-validation ul { margin: 55px 0 0; padding: 0; list-style: none; }
 .teaser-validation li { padding: 12px 0; border-top: 1px solid var(--white-line); color: rgba(255,255,255,.72); font-family: var(--serif); font-size: 17px; }
+.teaser-model-note { display: grid; grid-template-columns: 210px 1fr; gap: 32px; margin-top: 28px; padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.teaser-model-note b { color: var(--green); font-size: 9px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+.teaser-model-note p { max-width: 800px; margin: 0; font-family: var(--serif); font-size: 22px; line-height: 1.45; }
 
 .teaser-team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .teaser-person { display: grid; grid-template-columns: 180px 1fr; gap: 30px; align-items: center; min-height: 330px; padding: 34px; border: 1px solid var(--line); background: rgba(255,255,255,.38); }
@@ -146,6 +152,7 @@
   .teaser-proof article { min-height: auto; padding: 24px 18px !important; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
   .teaser-problem-grid { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }
   .teaser-boundary { grid-template-columns: 1fr; gap: 10px; }
+  .teaser-model-note { grid-template-columns: 1fr; gap: 10px; }
   .teaser-full-mockup { padding: 26px 22px; }
   .teaser-full-mockup .button { width: 100%; min-width: 0; }
   .teaser-phone, .teaser-phone.featured, .teaser-phone:last-child { grid-column: auto; width: 100%; min-height: 610px; transform: none; }
