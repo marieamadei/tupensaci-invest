@@ -15,7 +15,8 @@
 .teaser-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; align-items: end; gap: 74px; }
 .teaser-hero .display { max-width: 940px; font-size: clamp(46px, 5.7vw, 82px); line-height: 1; }
 .teaser-hero .hero-mark { width: min(270px, 46vw); margin-bottom: 34px; filter: invert(1); mix-blend-mode: screen; opacity: .82; }
-.teaser-hero .lead { max-width: 780px; }
+.teaser-hero .lead { max-width: 860px; }
+.teaser-hero-description { max-width: 780px; margin: 18px 0 0; color: rgba(255,255,255,.7); font-size: 16px; line-height: 1.65; }
 .teaser-hero-positioning { max-width: 760px; margin: 24px 0 0; padding-left: 20px; color: rgba(255,255,255,.68); border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 17px; line-height: 1.55; }
 .teaser-round-card { padding: 28px; border: 1px solid rgba(232,220,196,.28); background: rgba(255,255,255,.055); backdrop-filter: blur(14px); }
 .teaser-round-card > span { color: var(--gold-soft); font-size: 9px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
