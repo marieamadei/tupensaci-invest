@@ -88,10 +88,10 @@
 
 .teaser-advantage { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 70px; align-items: start; }
 .teaser-story-visual { position: sticky; top: 110px; min-height: 760px; }
-.teaser-products-main { position: absolute; inset: 20px 22px 92px 0; display: flex; align-items: center; justify-content: center; margin: 0; }
-.teaser-products-main img { display: block; width: 100%; height: auto; filter: drop-shadow(0 34px 48px rgba(0,0,0,.32)); }
-.teaser-customer-float { position: absolute; right: 0; bottom: 0; width: 43%; aspect-ratio: 1; overflow: hidden; margin: 0; border: 8px solid var(--green); box-shadow: 0 26px 55px rgba(0,0,0,.32); }
-.teaser-customer-float img { width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.teaser-customer-photo { position: absolute; inset: 0 54px 116px 0; overflow: hidden; margin: 0; box-shadow: 0 32px 70px rgba(0,0,0,.22); }
+.teaser-customer-photo img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center; }
+.teaser-product-float { position: absolute; right: 0; bottom: 0; width: 61%; margin: 0; }
+.teaser-product-float img { display: block; width: 100%; height: auto; filter: drop-shadow(0 24px 34px rgba(0,0,0,.38)); }
 .teaser-about-note { margin: 34px 0 0; padding: 22px 0 22px 24px; border-left: 2px solid var(--gold-soft); color: rgba(255,255,255,.82); font-family: var(--serif); font-size: 19px; line-height: 1.5; }
 .teaser-asset-list { margin: 45px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--white-line); }
 .teaser-asset-list li { display: grid; grid-template-columns: minmax(150px, .42fr) 1fr; gap: 24px; padding: 19px 0; border-bottom: 1px solid var(--white-line); }
@@ -191,8 +191,8 @@
   .teaser-full-mockup .button { width: 100%; min-width: 0; }
   .teaser-phone, .teaser-phone.featured, .teaser-phone:last-child { grid-column: auto; width: 100%; min-height: 610px; transform: none; }
   .teaser-story-visual { min-height: 540px; }
-  .teaser-products-main { inset: 10px 14px 72px 0; }
-  .teaser-customer-float { width: 42%; border-width: 5px; }
+  .teaser-customer-photo { inset: 0 28px 82px 0; }
+  .teaser-product-float { width: 54%; }
   .teaser-asset-list li { grid-template-columns: 1fr; gap: 8px; }
   .teaser-reviews { grid-template-columns: 1fr; margin-top: 60px; }
   .teaser-reviews-intro { grid-column: auto; }
