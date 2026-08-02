@@ -43,6 +43,12 @@
 .teaser-problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin: 72px 0 0 28%; padding-top: 30px; border-top: 1px solid var(--line); }
 .teaser-problem-grid p { margin: 0; color: var(--muted); font-family: var(--serif); font-size: 20px; line-height: 1.55; }
 .teaser-problem-grid strong { color: var(--ink); font-weight: 400; }
+.teaser-market-moment { display: grid; grid-template-columns: .82fr 1.18fr; gap: 54px; align-items: end; margin: 72px 0 0 14%; padding: 38px 42px; color: white; background: var(--green-2); }
+.teaser-market-number strong { display: block; font-family: var(--serif); font-size: clamp(58px, 8vw, 104px); font-weight: 400; letter-spacing: -.055em; line-height: .88; }
+.teaser-market-number span { display: block; max-width: 390px; margin-top: 22px; color: rgba(255,255,255,.76); font-size: 15px; line-height: 1.55; }
+.teaser-market-copy > span { display: block; margin-bottom: 14px; color: #d9b65d; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.teaser-market-copy p { margin: 0; font-family: var(--serif); font-size: clamp(22px, 2.7vw, 34px); line-height: 1.24; }
+.teaser-market-copy small { display: block; margin-top: 22px; color: rgba(255,255,255,.48); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; }
 .teaser-opportunity-line { max-width: 880px; margin: 78px 0 0; font-family: var(--serif); font-size: clamp(34px, 5vw, 62px); letter-spacing: -.035em; line-height: 1.08; }
 .teaser-opportunity-line em { color: var(--green); font-weight: 400; }
 
@@ -134,6 +140,7 @@
   .teaser-full-mockup .button { width: fit-content; }
   .teaser-round-card { max-width: 520px; }
   .teaser-problem-grid { margin-left: 0; }
+  .teaser-market-moment { margin-left: 0; }
   .teaser-mockup { grid-template-columns: repeat(2, 1fr); }
   .teaser-phone:last-child { grid-column: 1 / -1; width: calc(50% - 11px); justify-self: center; }
   .teaser-model-grid { grid-template-columns: 1fr 1fr; }
@@ -152,6 +159,7 @@
   .teaser-proof, .teaser-mockup, .teaser-model-grid, .teaser-round-path { grid-template-columns: 1fr; }
   .teaser-proof article { min-height: auto; padding: 24px 18px !important; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
   .teaser-problem-grid { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }
+  .teaser-market-moment { grid-template-columns: 1fr; gap: 38px; margin-top: 48px; padding: 30px 24px; }
   .teaser-boundary { grid-template-columns: 1fr; gap: 10px; }
   .teaser-model-note { grid-template-columns: 1fr; gap: 10px; }
   .teaser-full-mockup { padding: 26px 22px; }
