@@ -38,7 +38,7 @@
 .teaser-problem { background: var(--paper); }
 .teaser-problem-kicker { max-width: 780px; margin: 0 0 58px; color: var(--muted); font-family: var(--serif); font-size: clamp(24px, 3.3vw, 42px); letter-spacing: -.025em; line-height: 1.2; }
 .teaser-problem-kicker em { color: var(--green); font-weight: 400; }
-.teaser-quote { max-width: 1080px; margin: 0; font-family: var(--serif); font-size: clamp(48px, 7.4vw, 102px); letter-spacing: -.05em; line-height: .98; }
+.teaser-quote { max-width: 1100px; margin: 0; font-family: var(--serif); font-size: clamp(42px, 6.1vw, 82px); letter-spacing: -.045em; line-height: 1.02; }
 .teaser-quote em { color: var(--green); font-weight: 400; }
 .teaser-problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin: 72px 0 0 28%; padding-top: 30px; border-top: 1px solid var(--line); }
 .teaser-problem-grid p { margin: 0; color: var(--muted); font-family: var(--serif); font-size: 20px; line-height: 1.55; }
