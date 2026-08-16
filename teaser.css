@@ -16,6 +16,9 @@
 .teaser-hero .display { max-width: 940px; font-size: clamp(46px, 5.7vw, 82px); line-height: 1; }
 .teaser-hero .hero-mark { width: min(270px, 46vw); margin-bottom: 34px; filter: invert(1); mix-blend-mode: screen; opacity: .82; }
 .teaser-hero .lead { max-width: 860px; }
+.teaser-hero-explainer { max-width: 860px; margin-top: 32px; padding-top: 25px; border-top: 1px solid rgba(232,220,196,.24); }
+.teaser-hero-explainer .lead { margin-top: 0; color: rgba(255,255,255,.82); font-size: clamp(19px, 1.8vw, 24px); line-height: 1.48; }
+.teaser-hero-explainer strong { color: white; font-weight: 650; }
 .teaser-hero-description { max-width: 780px; margin: 18px 0 0; color: rgba(255,255,255,.7); font-size: 16px; line-height: 1.65; }
 .teaser-hero-positioning { max-width: 760px; margin: 24px 0 0; padding-left: 20px; color: rgba(255,255,255,.68); border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 17px; line-height: 1.55; }
 .teaser-round-card { padding: 28px; border: 1px solid rgba(232,220,196,.28); background: rgba(255,255,255,.055); backdrop-filter: blur(14px); }
@@ -181,6 +184,10 @@
 @media (max-width: 650px) {
   .teaser-hero { min-height: auto; padding: 70px 0; }
   .teaser-hero .display { font-size: 38px; line-height: 1.04; }
+  .teaser-hero-explainer { margin-top: 27px; padding-top: 22px; }
+  .teaser-hero-explainer .lead { font-size: 19px; }
+  .teaser-hero-description { font-size: 15px; }
+  .teaser-hero-positioning { font-size: 16px; }
   .teaser-proof, .teaser-mockup, .teaser-model-grid, .teaser-round-path { grid-template-columns: 1fr; }
   .teaser-proof article { min-height: auto; padding: 24px 18px !important; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
   .teaser-problem-grid { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }
